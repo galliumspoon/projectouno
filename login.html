@@ -1,0 +1,57 @@
+<html>
+
+<head>
+  <title>Studio Management - Login</title>
+  <link rel="stylesheet" type="text/css" href="login.css" />
+  <link href='https://fonts.googleapis.com/css?family=Poiret One' rel='stylesheet' />
+  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet' />
+  <link rel="shortcut icon" href="favicon.ico" />
+</head>
+
+<body>
+  <div id="header">
+    <div id="headerText">
+    </div>
+  </div>
+  <p id="registerLabel" class="label">Register</p>
+  <div id="registerBody" class="body">
+      <input id="nameReg" type="text" placeholder="Enter your username!" required/>
+      <input id="emailReg" type="email" placeholder="Enter your email!" required/>
+      <input id="passReg" type="password" placeholder="Enter your password!" required/>
+      <button id="registerButton">Register!</button>
+  </div>
+  <p id="loginLabel" class="label">Login</p>
+  <div id="loginBody" class="body">
+    <input id="emailLog" type="email" placeholder="Enter your email!" required />
+    <input id="passLog" type="password" placeholder="Enter your password!" required />
+    <button id="loginButton">Login!</button>
+  </div>
+
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyACInesUp3WGYVGTIvMX4W5cIzH1NwVwYM",
+    authDomain: "studio-management-41c92.firebaseapp.com",
+    databaseURL: "https://studio-management-41c92.firebaseio.com",
+    projectId: "studio-management-41c92",
+    storageBucket: "studio-management-41c92.appspot.com",
+    messagingSenderId: "1079925404802"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
+
+<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+<script src="login.js"></script>
+
+</html>

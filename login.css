@@ -1,0 +1,202 @@
+body {
+  background-color: #ffffdd;
+  display: flex;
+  align-items: center;
+  background-image: url("157511178.jpg");
+  background-size: cover;
+  font-family: "Open Sans", sans-serif;
+}
+
+#header {
+  width: 100%;
+  position: relative;
+  margin: 0 0 auto 0;
+  text-align: right;
+  padding: 1% 0 1% 0;
+  border-radius: 15px;
+}
+
+.label {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  font-family: "Poiret One", sans-serif;
+  font-weight: bold;
+
+}
+
+.body {
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #fffaad;
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  border: none;
+  background-color: #ffffef;
+}
+
+button {
+  background-color: #ffffef;
+  border: none;
+}
+
+#registerLabel {
+  background-color: #ffffdd;
+}
+
+#loginLabel {
+  background-color: #fffaad;
+}
+
+#loginBody input {
+  border-radius: 15px;
+}
+
+#loginBody button {
+  border-radius: 15px;
+}
+
+#registerBody input {
+  border-radius: 15px;
+}
+
+#registerBody button {
+  border-radius: 15px;
+}
+
+#registerBody {
+  z-index: 0;
+}
+
+#loginBody {
+  z-index: 1;
+}
+
+#signOut {
+  color: #333313;
+}
+
+@media (min-width: 300px) {
+  #headerText p {
+    font-size: 4em;
+    padding-right: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .label {
+    padding: 2% 0 3% 2%;
+    margin-bottom: 0;
+    margin-top: -33%;
+    position: absolute;
+    width: 25%;
+    font-size: 4em;
+  }
+
+  .body {
+    flex-direction: column;
+    justify-content: center;
+    padding: 3%;
+    width: 80%;
+    height: 20%;
+    margin-left: 8%;
+    margin-top: -8%;
+  }
+
+  input {
+    margin-bottom: 3%;
+    padding-left: 2%;
+    font-size: 3em;
+    width: 80%;
+  }
+
+  button {
+    padding: 2%;
+    font-size: 3em;
+  }
+
+  #registerLabel {
+    margin-left: 35%;
+  }
+
+  #loginLabel {
+    margin-left: 8%;
+  }
+
+}
+
+@media (min-width: 1000px) {
+
+  #headerText p {
+    font-size: 2em;
+    display: inline;
+    padding-right: 3%;
+  }
+
+  .label {
+    padding: 2% 0 3% 2%;
+    margin-bottom: 0;
+    margin-top: -7%;
+    position: absolute;
+    width: 18%;
+    font-size: 3em;
+  }
+
+  .body {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 3%;
+    width: 60%;
+    height: 6%;
+    margin-left: 18%;
+    margin-top: 0;
+  }
+
+  input {
+    margin-right: 3%;
+    padding-left: 1%;
+    margin-bottom: 0;
+  }
+
+  button {
+    padding: 1%;
+  }
+
+  #registerLabel {
+    margin-left: 38%;
+  }
+
+  #loginLabel {
+    margin-left: 18%;
+  }
+
+  #loginBody input {
+    width: 37%;
+    font-size: 1.7em;
+    height: 70%;
+  }
+
+  #loginBody button {
+    font-size: 1.7em;
+  }
+
+  #registerBody input {
+    width: 33%;
+    font-size: 1.35em;
+    margin-left: -2%;
+    border-radius: 15px;
+  }
+
+  #registerBody button {
+    font-size: 1.4em;
+    margin-left: -2%;
+  }
+
+  #signOut:hover {
+    color: white;
+  }
+}

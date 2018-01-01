@@ -1,0 +1,76 @@
+body {
+  background-color: #ffffdd;
+  display: flex;
+  align-items: center;
+  background-image: url("157511178.jpg");
+  background-size: cover;
+  font-family: "Open Sans", sans-serif;
+}
+
+#header {
+  width: 100%;
+  position: relative;
+  margin: 0 0 auto 0;
+  text-align: right;
+  padding: 1% 0 1% 0;
+  border-radius: 15px;
+}
+
+input {
+  border: none;
+  background-color: #ffffef;
+}
+
+button {
+  background-color: #ffffef;
+  border: none;
+}
+
+#signOut {
+  color: #333313;
+}
+
+@media (min-width: 300px) {
+  #headerText p {
+    font-size: 4em;
+    padding-right: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  input {
+    margin-bottom: 3%;
+    padding-left: 2%;
+    font-size: 3em;
+    width: 80%;
+  }
+
+  button {
+    padding: 2%;
+    font-size: 3em;
+  }
+
+}
+
+@media (min-width: 1000px) {
+
+  #headerText p {
+    font-size: 2em;
+    display: inline;
+    padding-right: 3%;
+  }
+
+  input {
+    margin-right: 3%;
+    padding-left: 1%;
+    margin-bottom: 0;
+  }
+
+  button {
+    padding: 1%;
+  }
+
+  #signOut:hover {
+    color: white;
+  }
+}
