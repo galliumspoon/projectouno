@@ -9,8 +9,8 @@
 </head>
 
 <body>
-  <div id="header">
-    <div id="headerText">
+  <div id="header" class="header">
+    <div id="headerText" class="headerText">
     </div>
   </div>
   <p id="registerLabel" class="label">Register</p>
@@ -30,22 +30,23 @@
 </body>
 
 <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
+
 <script>
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyACInesUp3WGYVGTIvMX4W5cIzH1NwVwYM",
-    authDomain: "studio-management-41c92.firebaseapp.com",
-    databaseURL: "https://studio-management-41c92.firebaseio.com",
-    projectId: "studio-management-41c92",
-    storageBucket: "studio-management-41c92.appspot.com",
-    messagingSenderId: "1079925404802"
+    apiKey: "AIzaSyDWs2YAqcSlQFXSG1xCwgENkf23Tc240Pc",
+    authDomain: "danfirstfirebase.firebaseapp.com",
+    databaseURL: "https://danfirstfirebase.firebaseio.com",
+    projectId: "danfirstfirebase",
+    storageBucket: "danfirstfirebase.appspot.com",
+    messagingSenderId: "860435848792"
   };
   firebase.initializeApp(config);
 </script>
 
-<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
 
 <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -53,5 +54,6 @@
     crossorigin="anonymous"></script>
 
 <script src="login.js"></script>
+<script src="booking.js"></script>
 
 </html>

@@ -1,59 +1,55 @@
-
 <html>
+
 <head>
-<title>Group Project</title>
+  <title>Studio Management - Book A Studio</title>
+  <link rel="stylesheet" type="text/css" href="booking.css">
 </head>
 
 <body>
-
-<h1>Studio Management</h1>
-
-<input type="text" id="studioRoomNameBox" placeholder="Studio name to create" />
-<input type="text" id="studioCost" placeholder="input studio cost $/hr." />
-<input type="text" id="studioSize" placeholder="input studio size sq. ft." />
-<button id="createStudioBtn">Save</button>
-
-<!-- Include date selection, print out availability, print out a users bookings -->
-
-<h1>Studio List</h2>
-
-  <button id="listStudiosBtn">List Studios</button>
-
-  <div id="projDiv">
-
+  <div id="header2" class="header">
+    <div id="headerText2" class="headerText"></div>
   </div>
 
-<ul id="studioRoomAvailability">
-</ul>
+  <h1>Studio Management</h1>
 
+  <input type="text" id="studioRoomNameBox" placeholder="Studio name to create" />
+  <input type="text" id="studioCost" placeholder="input studio cost $/hr." />
+  <input type="text" id="studioSize" placeholder="input studio size sq. ft." />
+  <button id="createStudioBtn">Save</button>
 
+  <!-- Include date selection, print out availability, print out a users bookings -->
 
-  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-messaging.js"></script>
+  <h1>Studio List</h2>
 
+    <button id="listStudiosBtn">List Studios</button>
+
+    <div id="projDiv">
+
+    </div>
+
+  <ul id="studioRoomAvailability">
+  </ul>
+
+</body>
 
 <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyDWs2YAqcSlQFXSG1xCwgENkf23Tc240Pc",
-    authDomain: "danfirstfirebase.firebaseapp.com",
-    databaseURL: "https://danfirstfirebase.firebaseio.com",
-    projectId: "danfirstfirebase",
-    storageBucket: "danfirstfirebase.appspot.com",
-    messagingSenderId: "860435848792"
-  };
-  firebase.initializeApp(config);
-</script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+
+
+
+   <script src="booking.js"></script>
+
+
+
   <script src="studio.js"></script>
   <script src="groupProject.js"></script>
 
 
-
-</body>
 </html>

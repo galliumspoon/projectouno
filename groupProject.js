@@ -1,4 +1,3 @@
-
 let createStudioNameTextBox = $("#studioRoomNameBox")
 let createStudioSizeTextBox = $("#studioSize")
 let createStudioCostTextBox = $("#studioCost")

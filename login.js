@@ -1,5 +1,4 @@
-firebase.initializeApp(config);
-
+var auth = firebase.auth()
 let getButton = $("#registerButton")
 let loginButton = $("#loginButton")
 let registerSwap = $("#registerLabel")
@@ -13,60 +12,56 @@ getButton.click(function() {
   let pass = $("#passReg")
   let name = $("#nameReg").val()
   //creates user
-  firebase.auth().createUserWithEmailAndPassword(email.val(), pass.val()).then(function () {
-    var user = firebase.auth().currentUser;
+  auth.createUserWithEmailAndPassword(email.val(), pass.val()).then(function () {
+    var user = auth.currentUser;
     //adds the username
     user.updateProfile({ displayName : name}).then(function() {
       user.sendEmailVerification().then(function() {
         console.log("check email")
         alert("Check your email to authorize your account!")
       }).catch(function(error) {
-        console.log("error!")
+        console.log("ERR")
+        alert("Your email is either incorrectly formatted, or already in the database!")
       })
-      var displayName = user.displayName;
-      console.log(displayName)
-      $("#headerText").html(`<p>Hello ${displayName}!</p><p id="signOut">SIGN OUT</p>`)
-      $("#signOut").click(function() {
-        firebase.auth().signOut().then(function() {
-          console.log("signed out!")
-          $("#headerText").html(`<p>Signed Out!</p>`)
-        }).catch(function(error) {
-          console.log("ERR")
-        })
-      })
+      console.log(user.displayName)
     })
-  }).catch(function(error) {
-    alert("Your email is either incorrectly formatted, or already in the database!")
   })
-  email.val("")
-  pass.val("")
-  $("#nameReg").val("")
 })
 
 //tracks user state and whether or not to display sign out button and user hello
-firebase.auth().onAuthStateChanged(function(user) {
+auth.onAuthStateChanged(function(user) {
+  return
+  console.log("onAuthStateChanged called")
+//  return
   if (user) {
-    // User is signed in.
+    window.location = "groupProject.html"
+    var user = auth.currentUser;
     var displayName = user.displayName;
-    console.log(displayName)
-    $("#header").css("background-color", "#ffffdd")
-    $("#headerText").html(`<p>Hello ${displayName}!</p><p id="signOut">SIGN OUT</p>`)
+    $("#header2").css("background-color", "#ffffdd")
+    $("#headerText2").html(`<p>Hello ${displayName}!</p><p id="signOut">SIGN OUT</p>`)
     $("#signOut").click(function() {
-      firebase.auth().signOut().then(function() {
+      auth.signOut().then(function() {
         console.log("signed out!")
-        $("#headerText").html(`<p>Signed Out!</p>`)
+        window.location = "login.html"
       }).catch(function(error) {
         console.log("ERR")
       })
     })
   }
 })
+//   catch(function(error) {
+//   console.log("ERR")
+// })
+
+
 
 //login stuff
 loginButton.click(function() {
   let email = $("#emailLog")
   let password = $("#passLog")
-  firebase.auth().signInWithEmailAndPassword(email.val(), password.val()).catch(function(error) {
+  auth.signInWithEmailAndPassword(email.val(), password.val()).then(function() {
+    window.location = "groupProject.html"
+  }).catch(function(error) {
     // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
