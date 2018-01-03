@@ -23,9 +23,305 @@ let studio = new Studio(studioName, studioCost, studioSize)
   studiosRef.child(studio.title).set({
     title : studio.title,
     size : studio.size,
-    cost : studio.cost
+    cost : studio.cost,
+    days : {
+      Mon : {
+        hour1_9to10 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "9-10"
+        },
+        hour2_10to11 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "10-11"
+        },
+        hour3_11to12 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "11-12"
+        },
+        hour4_12to1 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "12-1"
+        },
+        hour5_1to2 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "1-2"
+        },
+        hour6_2to3 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "2-3"
+        },
+        hour7_3to4 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "3-4"
+        },
+        hour8_4to5 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "4-5"
+        }
+      },
+      Tue : {
+        hour1_9to10 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "9-10"
+        },
+        hour2_10to11 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "10-11"
+        },
+        hour3_11to12 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "11-12"
+        },
+        hour4_12to1 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "12-1"
+        },
+        hour5_1to2 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "1-2"
+        },
+        hour6_2to3 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "2-3"
+        },
+        hour7_3to4 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "3-4"
+        },
+        hour8_4to5 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "4-5"
+        }
+      },
+      Wed : {
+        hour1_9to10 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "9-10"
+        },
+        hour2_10to11 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "10-11"
+        },
+        hour3_11to12 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "11-12"
+        },
+        hour4_12to1 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "12-1"
+        },
+        hour5_1to2 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "1-2"
+        },
+        hour6_2to3 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "2-3"
+        },
+        hour7_3to4 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "3-4"
+        },
+        hour8_4to5 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "4-5"
+        }
+      },
+      Thu : {
+        hour1_9to10 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "9-10"
+        },
+        hour2_10to11 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "10-11"
+        },
+        hour3_11to12 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "11-12"
+        },
+        hour4_12to1 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "12-1"
+        },
+        hour5_1to2 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "1-2"
+        },
+        hour6_2to3 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "2-3"
+        },
+        hour7_3to4 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "3-4"
+        },
+        hour8_4to5 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "4-5"
+        }
+      },
+      Fri : {
+        hour1_9to10 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "9-10"
+        },
+        hour2_10to11 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "10-11"
+        },
+        hour3_11to12 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "11-12"
+        },
+        hour4_12to1 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "12-1"
+        },
+        hour5_1to2 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "1-2"
+        },
+        hour6_2to3 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "2-3"
+        },
+        hour7_3to4 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "3-4"
+        },
+        hour8_4to5 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "4-5"
+        }
+      },
+      Sat : {
+        hour1_9to10 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "9-10"
+        },
+        hour2_10to11 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "10-11"
+        },
+        hour3_11to12 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "11-12"
+        },
+        hour4_12to1 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "12-1"
+        },
+        hour5_1to2 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "1-2"
+        },
+        hour6_2to3 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "2-3"
+        },
+        hour7_3to4 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "3-4"
+        },
+        hour8_4to5 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "4-5"
+        }
+      },
+      Sun : {
+        hour1_9to10 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "9-10"
+        },
+        hour2_10to11 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "10-11"
+        },
+        hour3_11to12 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "11-12"
+        },
+        hour4_12to1 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "12-1"
+        },
+        hour5_1to2 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "1-2"
+        },
+        hour6_2to3 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "2-3"
+        },
+        hour7_3to4 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "3-4"
+        },
+        hour8_4to5 : {
+          available : true,
+          bookedBy : "no-one",
+          hourSlot : "4-5"
+        }
+      }
 
-    // days : studio.days
+    }
+
 
   })
 
